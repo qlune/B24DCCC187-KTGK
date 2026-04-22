@@ -1,0 +1,87 @@
+.pageWrapper {
+  padding: 24px;
+  min-height: calc(100vh - 56px);
+  background: #f5f7fa;
+  box-sizing: border-box;
+}
+
+.cardContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.profileCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.imageSection {
+  flex: 0 0 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImage {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 4px solid #fefffc;
+}
+
+.infoSection {
+  flex: 1;
+}
+
+.name {
+  margin-bottom: 12px !important;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #595959;
+  margin-bottom: 16px !important;
+}
+
+.deviceText {
+  margin-top: 8px;
+  margin-bottom: 0 !important;
+  color: #595959;
+}
+
+.mobileContent,
+.desktopContent {
+  margin-top: 12px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .pageWrapper {
+    padding: 16px;
+  }
+
+  .profileCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageSection {
+    flex: unset;
+    width: 100%;
+  }
+
+  .profileImage {
+    width: 160px;
+    height: 160px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}

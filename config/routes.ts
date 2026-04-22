@@ -16,6 +16,7 @@
 		],
 	},
 
+
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
@@ -24,6 +25,7 @@
 		component: './TrangChu',
 		icon: 'HomeOutlined',
 	},
+
 	{
 		path: '/gioi-thieu',
 		name: 'About',
@@ -35,6 +37,19 @@
 		name: 'RandomUser',
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
+	},
+	{
+		path: '/profile-card',
+		name: 'ProfileCard',
+		component: '@/components/ProfileCard',
+		icon: 'UserOutlined',
+
+	},
+	{
+		path: '/quan-ly-phong-hoc',
+		name: 'Quản lý phòng học',
+		component: './QuanLyPhongHoc',
+		icon: 'AppstoreOutlined',
 	},
 
 	// DANH MUC HE THONG
